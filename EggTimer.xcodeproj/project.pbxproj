@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20295812186D0660038FCE0 /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20295802186D0660038FCE0 /* PrefsViewController.swift */; };
+		E20295882186D9A20038FCE0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E20295872186D9A10038FCE0 /* Info.plist */; };
+		E202958B2186DA240038FCE0 /* EggTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202958A2186DA240038FCE0 /* EggTimer.swift */; };
+		E202958D2186F2E10038FCE0 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E202958C2186F2E10038FCE0 /* Preferences.swift */; };
+		E202958F2186F8FF0038FCE0 /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E202958E2186F8FE0038FCE0 /* ding.mp3 */; };
 		E2F9F2082186ABE700407321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9F2072186ABE700407321 /* AppDelegate.swift */; };
 		E2F9F20A2186ABE700407321 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9F2092186ABE700407321 /* ViewController.swift */; };
 		E2F9F20C2186ABE800407321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F9F20B2186ABE800407321 /* Assets.xcassets */; };
@@ -25,13 +30,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E20295802186D0660038FCE0 /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
+		E20295862186D9A10038FCE0 /* EggTimer.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = EggTimer.entitlements; sourceTree = "<group>"; };
+		E20295872186D9A10038FCE0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E202958A2186DA240038FCE0 /* EggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer.swift; sourceTree = "<group>"; };
+		E202958C2186F2E10038FCE0 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		E202958E2186F8FE0038FCE0 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
 		E2F9F2042186ABE700407321 /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F9F2072186ABE700407321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F9F2092186ABE700407321 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2F9F20B2186ABE800407321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F9F20E2186ABE800407321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E2F9F2102186ABE800407321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2F9F2112186ABE800407321 /* EggTimer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EggTimer.entitlements; sourceTree = "<group>"; };
 		E2F9F2162186ABE800407321 /* EggTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F9F21A2186ABE800407321 /* EggTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimerTests.swift; sourceTree = "<group>"; };
 		E2F9F21C2186ABE800407321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +64,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E20295832186D88D0038FCE0 /* vcs */ = {
+			isa = PBXGroup;
+			children = (
+				E2F9F2092186ABE700407321 /* ViewController.swift */,
+				E20295802186D0660038FCE0 /* PrefsViewController.swift */,
+			);
+			path = vcs;
+			sourceTree = "<group>";
+		};
+		E20295852186D9A10038FCE0 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E20295862186D9A10038FCE0 /* EggTimer.entitlements */,
+				E20295872186D9A10038FCE0 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E20295892186D9F20038FCE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E202958A2186DA240038FCE0 /* EggTimer.swift */,
+				E202958C2186F2E10038FCE0 /* Preferences.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E2F9F1FB2186ABE700407321 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +113,12 @@
 			isa = PBXGroup;
 			children = (
 				E2F9F2072186ABE700407321 /* AppDelegate.swift */,
-				E2F9F2092186ABE700407321 /* ViewController.swift */,
-				E2F9F20B2186ABE800407321 /* Assets.xcassets */,
+				E20295892186D9F20038FCE0 /* Model */,
+				E20295832186D88D0038FCE0 /* vcs */,
 				E2F9F20D2186ABE800407321 /* Main.storyboard */,
-				E2F9F2102186ABE800407321 /* Info.plist */,
-				E2F9F2112186ABE800407321 /* EggTimer.entitlements */,
+				E202958E2186F8FE0038FCE0 /* ding.mp3 */,
+				E2F9F20B2186ABE800407321 /* Assets.xcassets */,
+				E20295852186D9A10038FCE0 /* SupportingFiles */,
 			);
 			path = EggTimer;
 			sourceTree = "<group>";
@@ -176,8 +213,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E202958F2186F8FF0038FCE0 /* ding.mp3 in Resources */,
 				E2F9F20C2186ABE800407321 /* Assets.xcassets in Resources */,
 				E2F9F20F2186ABE800407321 /* Main.storyboard in Resources */,
+				E20295882186D9A20038FCE0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F9F20A2186ABE700407321 /* ViewController.swift in Sources */,
+				E202958B2186DA240038FCE0 /* EggTimer.swift in Sources */,
+				E202958D2186F2E10038FCE0 /* Preferences.swift in Sources */,
+				E20295812186D0660038FCE0 /* PrefsViewController.swift in Sources */,
 				E2F9F2082186ABE700407321 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +394,8 @@
 				CODE_SIGN_ENTITLEMENTS = EggTimer/EggTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = EggTimer/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/EggTimer/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -370,7 +413,8 @@
 				CODE_SIGN_ENTITLEMENTS = EggTimer/EggTimer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = EggTimer/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/EggTimer/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
