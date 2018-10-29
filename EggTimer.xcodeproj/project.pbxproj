@@ -31,11 +31,11 @@
 
 /* Begin PBXFileReference section */
 		E20295802186D0660038FCE0 /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
-		E20295862186D9A10038FCE0 /* EggTimer.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = EggTimer.entitlements; sourceTree = "<group>"; };
 		E20295872186D9A10038FCE0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E202958A2186DA240038FCE0 /* EggTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimer.swift; sourceTree = "<group>"; };
 		E202958C2186F2E10038FCE0 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		E202958E2186F8FE0038FCE0 /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		E24C9D30218702D700C4852E /* EggTimer.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = EggTimer.entitlements; sourceTree = "<group>"; };
 		E2F9F2042186ABE700407321 /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F9F2072186ABE700407321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F9F2092186ABE700407321 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +76,6 @@
 		E20295852186D9A10038FCE0 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				E20295862186D9A10038FCE0 /* EggTimer.entitlements */,
 				E20295872186D9A10038FCE0 /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -117,6 +116,7 @@
 				E20295832186D88D0038FCE0 /* vcs */,
 				E2F9F20D2186ABE800407321 /* Main.storyboard */,
 				E202958E2186F8FE0038FCE0 /* ding.mp3 */,
+				E24C9D30218702D700C4852E /* EggTimer.entitlements */,
 				E2F9F20B2186ABE800407321 /* Assets.xcassets */,
 				E20295852186D9A10038FCE0 /* SupportingFiles */,
 			);
@@ -392,16 +392,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EggTimer/EggTimer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BER32Q88R5;
 				INFOPLIST_FILE = "$(SRCROOT)/EggTimer/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.difang.EggTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.difang.memory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -411,16 +413,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = EggTimer/EggTimer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = BER32Q88R5;
 				INFOPLIST_FILE = "$(SRCROOT)/EggTimer/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.difang.EggTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.difang.memory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
